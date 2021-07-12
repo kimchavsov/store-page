@@ -23,9 +23,9 @@ function contactPage() {
   subcontent.append(linebreak);
   subcontent.append(drinkLab);
   subcontent.append(slogan);
-  subcontent.append(createInfo('Phone:', ' +855 (95) 262 526'));
-  subcontent.append(createInfo('Email:', ' sales@drinklabkh.store'));
-  subcontent.append(createInfo('Store:', ' No.33A, Street. 229, Sangkat Phsar Depo 1, Khan Toul Kork,  Phnom Penh'));
+  subcontent.append(createInfo('Phone', '+855 (95) 262 526'));
+  subcontent.append(createInfo('Email', 'sales@drinklabkh.store'));
+  subcontent.append(createInfo('Store', 'No.33A, Street. 229, Sangkat Phsar Depo 1, Khan Toul Kork,  Phnom Penh'))
 
   pageContent.append(subcontent);
   return pageContent
@@ -44,7 +44,4 @@ function createInfo(key, value) {
 
   p.appendChild(spanKey);
   p.appendChild(spanValue);
-  return p
 }
-
-content.appendChild(contactPage());
