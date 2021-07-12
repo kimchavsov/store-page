@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+nav {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+#logo img{
+  width: 200px;
+}
+
+ul {
+  font-weight: 700px;
+  padding: 0 20px;
+  font-size: 20px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#home-page-des {
+  margin: 0;
+  color: white;
+  background-image: url('../src/coffee.jpeg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  height: calc(99vh - 6rem)
+}
+h2{
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #fcfbf9;
+}
+footer img {
+  width: 20px;
+}
