@@ -6,38 +6,108 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: 0px;
-}
-#logo img{
-  width: 200px;
+  background-color: #fcfbf9;
 }
 
-ul {
-  font-weight: 700px;
-  padding: 0 20px;
-  font-size: 20px;
-  width: 300px;
+#logo img{
+  width: 175px;
+}
+
+#content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.tab {
   list-style: none;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  padding: 5px 2rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+  transition: transform 0.3s;
+}
+
+.tab.active {
+  border-bottom: 2px solid black;
+}
+
+.tab:hover {
+  transform: translateY(-10%);
 }
 
 #home-page-des {
   margin: 0;
   color: white;
-  background-image: url('../src/coffee.jpeg');
+  background-image: url('../src/img/coffee.jpeg');
+  /* Center and scale the image nicely */
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   width: 100%;
-  height: calc(99vh - 6rem)
+  height: calc(99vh - 6rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-h2{
-  margin: 0;
+
+#home-page-des h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 50%;
+  font-family: 'Lobster', cursive;
+  font-size: 4em;
+}
+#home-page-des h4, #home-page-des p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 50%;
+  margin-top: 0;
+}
+#home-page-des h4 {
+  font-family: 'Kalam', cursive;
+  font-size: 1.5em;
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 1rem;
   background-color: #fcfbf9;
 }
-footer img {
-  width: 20px;
+footer p {
+  margin-right: 5px;
+}
+
+#products {
+  text-align: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, calc(90%/3));
+  /* grid-template-rows: repeat(3, 200px); */
+  margin: 20px;
+  padding-left: 50px;
+}
+
+.item-img {
+  width: 80%;
+}
+
+#contact-page {
+  width: 60%;
+}
+
+#contact-page h4 {
+  margin: 10px 0;
+  font-size: 2rem;
+  font-family: 'Lobster', cursive;
 }
