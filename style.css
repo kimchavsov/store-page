@@ -41,7 +41,7 @@ nav {
 #home-page-des {
   margin: 0;
   color: white;
-  background-image: url('../src/img/coffee.jpeg');
+  background-image: url('./img/coffee.jpeg');
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
