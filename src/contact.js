@@ -1,6 +1,6 @@
 function contactPage() {
   const pageContent = document.createElement('div');
-  
+  pageContent.id = 'contact-page'
   const title = document.createElement('h2');
   title.textContent = 'Contact Us';
 

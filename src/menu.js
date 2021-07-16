@@ -32,6 +32,9 @@ function loadMenu() {
   content.textContent = '';
 
   setBtnActive('product')
+  const conatiner = document.createElement('div');
+  conatiner.id = 'products'
+
   const items = [
     createMenu(
       'https://cdn.shopify.com/s/files/1/0293/1231/9626/products/Image_from_iOS-5_600x.jpg?v=1582480271',
@@ -102,8 +105,9 @@ function loadMenu() {
   ]
 
   items.forEach((item) => {
-    content.appendChild(item);
+    conatiner.appendChild(item);
   })
+  content.appendChild(conatiner)
 }
 
 export default loadMenu;
