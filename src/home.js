@@ -1,6 +1,4 @@
-const content = document.querySelector('#content')
-
-const createHomepage = function() {
+function createHomepage() {
   const homePage = document.createElement('div');
   homePage.id = 'home-page-des';
   const heading = document.createElement('h2');
@@ -15,8 +13,23 @@ const createHomepage = function() {
   homePage.appendChild(subhead);
   homePage.appendChild(para);
 
-  content.appendChild(homePage);
+  return homePage
 }
 
-createHomepage();
+function setBtnActive(id) {
+  const btnActive = document.querySelector('.active');
+  if (btnActive) btnActive.classList.remove('active');
 
+  const homeBtn = document.getElementById(id)
+  homeBtn.classList.add('active')
+}
+
+function loadHomepage() {
+  const content = document.getElementById('content');
+  content.textContent = '';
+
+  setBtnActive('home');
+  content.appendChild(createHomepage());
+}
+
+export default loadHomepage;
