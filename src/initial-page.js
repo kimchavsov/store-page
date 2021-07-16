@@ -16,7 +16,7 @@ function createNav() {
   const logo = document.createElement('div');
   logo.id = 'logo';
   logo.innerHTML = `
-  <img src="../src/img/drinklabLogo.png"></div>
+  <img src="./img/drinklabLogo.png"></div>
   `
 
   const tabs = document.createElement('div')
